@@ -1,5 +1,4 @@
-import os
-
+from deepgram import DeepgramClient, FileSource, PrerecordedOptions
 from dotenv import load_dotenv
 
 load_dotenv(".env")
@@ -7,8 +6,6 @@ load_dotenv(".env")
 
 # main.py (python example)
 
-
-from deepgram import DeepgramClient, FileSource, PrerecordedOptions
 
 # Path to the audio file
 AUDIO_FILE = "spacewalk.mp3"
