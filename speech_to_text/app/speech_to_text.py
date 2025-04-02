@@ -8,10 +8,10 @@ load_dotenv(".env")
 
 
 # Path to the audio file
-AUDIO_FILE = "spacewalk.mp3"
+AUDIO_FILE = "output.wav"
 
 
-def main():
+def process_sample():
     try:
         # STEP 1 Create a Deepgram client using the API key
         deepgram = DeepgramClient()
@@ -37,7 +37,3 @@ def main():
 
     except Exception as e:
         print(f"Exception: {e}")
-
-
-if __name__ == "__main__":
-    main()
